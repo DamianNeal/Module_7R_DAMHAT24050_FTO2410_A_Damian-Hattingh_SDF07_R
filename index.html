@@ -3,13 +3,178 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>Damian Neal Hattingh Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
-        
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+                
+            <!--Introduction-->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I am <strong>Damian Neal Hattingh</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+                <img src="img/damian_img.jpg" alt="A picture of Damian Hattingh" class="intro__img">
+            </section>
+
+            <!--My Services-->
+            <section class="my-services" id="services">
+                <h2 class="section__title section__title--services">What I do</h2>
+
+                <div class="services">
+
+                    <div class="service">
+                        <h3>Design</h3>
+                        <p>I provide personalized design services focused on bringing unique visions to life. 
+                            From concept to final design, I ensure each project is tailored to meet specific goals, combining aesthetics with functionality. 
+                            My goal is to create designs that capture attention and provide a seamless, user-friendly experience across all platforms. 
+                            Whether it’s for web, applications, or branding, I work closely with clients to craft visuals that reflect their unique identity and connect with their audience.</p>
+                        </div> <!-- / service -->
+                        
+                    <div class="service">
+                        <h3>Development</h3>
+                        <p>I independently offer development services with a focus on building robust, user-friendly web and application solutions. 
+                            My development approach combines functionality with performance, ensuring that each project runs smoothly and meets the specific needs of the client. 
+                            From backend systems to frontend interfaces, I create responsive, efficient code that enhances user engagement and adapts seamlessly across devices. 
+                            My goal is to deliver reliable, high-quality applications that not only meet but exceed expectations, bringing client visions to life through clean, effective development.</p>
+                    </div> <!-- / service -->
+
+                    <div class="service">
+                        <h3>UX/UI</h3>
+                        <p>I provide dedicated UX/UI services that prioritize intuitive, engaging, and visually appealing user experiences. 
+                            With a deep understanding of user behavior and design principles, I craft interfaces that make navigation simple and enjoyable, enhancing overall user satisfaction.
+                             My UX approach focuses on ease of use and accessibility, while my UI designs are tailored to reflect each brand's unique identity, ensuring a cohesive look and feel. 
+                             From wireframes to final interfaces, I work meticulously to create designs that are not only aesthetically pleasing but also highly functional and aligned with user needs.</p>
+                    </div> <!-- / service -->
+                    
+                </div> <!-- / services -->
+                    
+                <a href="#work" class="btn">My Work</a>
+            </section>
+
+         <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Designer & developer//</p>
+            
+            <div class="about-me__body">
+                <p>I am a passionate student at CodeSpace, where I’m building a strong foundation in web and application development. 
+                    Currently, I’m focused on sharpening my skills in full-stack development and UI/UX design, laying the groundwork for a career that merges both functionality and user-centered design.
+                    My next step is to begin my BSc in Software Development, further deepening my expertise in this field. My goal is to become a skilled full-stack developer with a keen eye for intuitive, user-friendly interfaces that enhance user experience. 
+                    I'm excited to continue growing and bringing impactful digital solutions to life.</p>
+            </div>
+            
+            <img src="img/who_i_am.jpg" alt="Wide angel photo of Damian Neal Hattingh" class="about-me__img">
+         </section>
+         
+
+             <!--About me-->
+             <section class="my-work" id="work">
+                <h2 class="section__title section__title--work">My work</h2>
+                <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+                <div class="portfolio">
+
+                    <!--portfolio item 01-->
+                    <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p1.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                      <!--portfolio item 02-->
+                      <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p5.jpg"alt="" class="portfolio__img">
+                    </a>
+
+                      <!--portfolio item 03-->
+                      <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p6.jpg"alt="" class="portfolio__img">
+                    </a>
+
+                      <!--portfolio item 04-->
+                      <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p8.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                      <!--portfolio item 05-->
+                      <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p7.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                      <!--portfolio item 06-->
+                      <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p4.jpg"alt="" class="portfolio__img">
+                    </a>
+
+                    <!--portfolio item 07-->
+                    <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p9.jpg"alt="" class="portfolio__img">
+                    </a>
+
+                    <!--portfolio item 08-->
+                    <a href="portfolio-item.html" class="portfolio__item">
+                        <img src="img/p10.jpg"alt="" class="portfolio__img">
+                    </a>
+
+
+                </div>
+            </section>
+
+             <!-- Footer -->
+            <footer class="footer">
+             
+                <a href="mailto:damiannhattingh@gmail.com" class="footer__link">damiannhattingh@gmail.com</a>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://codepen.io">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://www.linkedin.com/in/yourprofile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://www.instagram.com/yourprofile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://github.com">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </footer>
+
+
+            <script src="js/index.js"></script>
+
+
     </body>
 </html>
